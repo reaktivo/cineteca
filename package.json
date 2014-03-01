@@ -1,0 +1,22 @@
+{
+  "name": "cineteca",
+  "version": "0.0.1",
+  "description": "Un scraper para el sitio de la Cineteca Nacional de Mexico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cineteca"
+  ],
+  "author": "Marcel Miranda",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "async": "~0.2.10",
+    "request": "~2.34.0",
+    "cheerio": "~0.13.1",
+    "coffee-script": "~1.7.1",
+    "underscore": "~1.6.0",
+    "underscore.string": "~2.3.3"
+  }
+}
