@@ -1,7 +1,7 @@
 {
   "name": "cineteca",
   "version": "0.0.1",
-  "description": "Un scraper para el sitio de la Cineteca Nacional de Mexico",
+  "description": "Un scraper para el sitio de la Cineteca Nacional de México",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
