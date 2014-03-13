@@ -6,7 +6,7 @@ table =
 
   id: (url) ->
     trim parse(url.split("?")[1]).clv
-  url: (url) -> url
+  url: (url) -> 'http://www.cinetecanacional.net/' + url
   title: ->
     @('.peliculaTitDir').remove()
     clean @('.peliculaTitulo').text()
