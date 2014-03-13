@@ -19,9 +19,11 @@ table =
   img: ->
     trim @('[id=peliculaImagen] img').attr('src')
   trailer: ->
-    @('.botonTrailer')
+    embed = @('.botonTrailer')
       .attr('onclick')
       .match(/iframe\:\'(.+?)\'/)[1]
+    embed.replace 'embed/', 'watch?v=' if embed
+
 
 exports.details = ($, url) ->
   object map table, (fn, key) -> [key, try fn.call $, url]
