@@ -1,6 +1,6 @@
 {
   "name": "cineteca",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Un scraper para el sitio de la Cineteca Nacional de México",
   "main": "index.js",
   "scripts": {
