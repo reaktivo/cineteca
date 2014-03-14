@@ -27,18 +27,21 @@ table =
     trim @('[id=peliculaFicha]').html()
 
   synopsis: ->
-    clean @('[id=peliculaSinopsis] p[style]').text()
+    $ = this
+    el = $('[id=peliculaSinopsis]')
+    $('p', el).removeAttr('style')
+    el.html()
 
   img: ->
     url.parse @('[id=peliculaImagen] img').attr('src')
 
   youtube: ->
     id = get_youtube_id(this)
-    "http://www.youtube.com/watch?v=#{id}" if id
+    "http://www.youtube.com/watch?v=#{id}&iv_load_policy=3" if id
 
   embed: ->
     id = get_youtube_id(this)
-    "http://www.youtube.com/embed/#{id}?autoplay=1" if id
+    "http://www.youtube.com/embed/#{id}?autoplay=1&iv_load_policy=3" if id
 
 exports.details = ($, url) ->
   object map table, (fn, key) ->
