@@ -3,6 +3,11 @@
 { trim, clean } = require 'underscore.string'
 url = require 'url'
 
+get_youtube_id = ($) ->
+  $('.botonTrailer')
+    .attr('onclick')
+    .match(/\/(.{11})(?:\'|\?)/)[1]
+
 table =
 
   id: (url) ->
@@ -27,11 +32,13 @@ table =
   img: ->
     url.parse @('[id=peliculaImagen] img').attr('src')
 
-  trailer: ->
-    embed = @('.botonTrailer')
-      .attr('onclick')
-      .match(/iframe\:\'(.+?)\'/)[1]
-    embed.replace 'embed/', 'watch?v=' if embed
+  youtube: ->
+    id = get_youtube_id(this)
+    "http://www.youtube.com/watch?v=#{id}" if id
+
+  embed: ->
+    id = get_youtube_id(this)
+    "http://www.youtube.com/embed/#{id}?autoplay=1" if id
 
 exports.details = ($, url) ->
   object map table, (fn, key) ->
