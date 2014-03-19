@@ -9,7 +9,12 @@ entry = 'http://www.cinetecanacional.net'
 today = '/controlador.php?opcion=carteleraDia'
 
 get = (uri, cb) ->
-  request { uri, encoding: 'binary' }, cb
+  request { uri, encoding: 'binary' }, (err, res, body) ->
+    if res and res.statusCode
+      unless 200 <= res.statusCode < 300 or res.statusCode is 304
+        err = new Error "Response status code was #{res.statusCode} successful"
+    return cb err if err
+    cb err, res, body
 
 # movie_urls()
 # movie_urls() loads the initial showtimes
