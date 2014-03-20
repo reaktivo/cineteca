@@ -2,7 +2,7 @@ cheerio = require 'cheerio'
 request = require 'request'
 async = require 'async'
 { waterfall } = async
-{ map } = require 'underscore'
+{ map, compact } = require 'underscore'
 { details } = require './extract'
 
 entry = 'http://www.cinetecanacional.net'
@@ -60,6 +60,7 @@ module.exports =
   # @param callback
   today: (cb) ->
     waterfall [
-      (cb) -> movie_urls today, cb,
+      (cb) -> movie_urls today, cb
       (urls, cb) -> async.map urls, movie_details, cb
+      (movies, cb) -> cb null, compact movies
     ], cb

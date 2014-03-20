@@ -44,5 +44,6 @@ table =
     "http://www.youtube.com/embed/#{id}?autoplay=1&iv_load_policy=3" if id
 
 exports.details = ($, url) ->
-  object map table, (fn, key) ->
+  movie = object map table, (fn, key) ->
     [key, try fn.call $, url]
+  if movie.id then movie else null
