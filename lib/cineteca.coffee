@@ -16,6 +16,16 @@ get = (uri, cb) ->
     return cb err if err
     cb err, res, body
 
+
+day_urls = (cb) ->
+  days = [];
+  get entry + today, (err, res, body) ->
+    $ = cheerio.load body;
+    cb null, map $("div#mas_fechas p a"), (a) ->
+      "&" + $(a).attr('href').split('&')[1]
+
+
+
 # movie_urls()
 # movie_urls() loads the initial showtimes
 # for the day page, it then passes control
@@ -25,12 +35,13 @@ get = (uri, cb) ->
 # @param <String> url: Starting point to load
 # @param <Function> callback: Function to call
 #        when finished
-movie_urls = (url, cb) ->
+movie_urls = (url, cb, day) ->
   urls = []
   get entry + url, (err, res, body) ->
+    
     $ = cheerio.load body
-    cb null, map $('[id=botonVer]'), (btn) ->
-      "/" + $(btn).attr('onclick').split('\'')[1]
+    cb null, ( map $('[id=botonVer]'), (btn) ->
+      "/" + $(btn).attr('onclick').split('\'')[1] + "#" + day), day
 
 # movie_details()
 # movie_details() loads the passed movie url
@@ -41,10 +52,12 @@ movie_urls = (url, cb) ->
 # @param <Function> callback: Function to call
 #        when finished
 movie_details = (url, cb) ->
-  url = entry + url
-  get url, (err, res, body) ->
+  data = url.split("#")
+  uri = data[0]
+  day = data[1]
+  get entry + uri, (err, res, body) ->
     $ = cheerio.load body
-    cb null, details $, url
+    cb null, details $, uri, day
 
 # Public API
 module.exports =
@@ -58,9 +71,33 @@ module.exports =
   # movie listings for the day when complete.
   #
   # @param callback
+
   today: (cb) ->
     waterfall [
       (cb) -> movie_urls today, cb
       (urls, cb) -> async.map urls, movie_details, cb
       (movies, cb) -> cb null, compact movies
     ], cb
+
+  get_movies_by_day: (cb, day) ->
+    waterfall [
+      (cb) -> movie_urls today + day, cb, day
+      (urls, day, cb) -> async.map urls, movie_details, cb
+      (movies, cb) -> cb null, compact movies
+    ], cb
+
+  get_days: (cb) ->
+    waterfall [
+      (cb) -> day_urls cb
+    ], cb
+
+
+
+
+
+
+
+
+
+
+

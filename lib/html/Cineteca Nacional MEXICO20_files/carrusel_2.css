@@ -1,0 +1,265 @@
+/*
+ * Mexico D.F. 2010
+ *El contenido de este archivo fue desarrollado por :
+ *Rogelio Argumedo Uribe rogelio.argumedo@sip.gob.mx para la 
+ *Presidencia de la República a través del Sistema Internet de la
+ *Presidencia (SIP sip.gob.mx).
+ *
+ *Bajo la Licencia: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 
+ *http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es_MX
+ *
+*/
+
+
+#carrusel_2 {
+	width: 59em;
+	height: 16em;
+}
+
+.B #carrusel_2 {
+	width: 44em;
+}
+.C #carrusel_2 {
+	width: 39.5em;
+}
+.D #carrusel_2 {
+	width: 38em;
+}
+.E #carrusel_2 {
+	width: 35em;
+}
+.F #carrusel_2 {
+	width: 29em;
+}
+.P #carrusel_2 {
+	width: 47em;
+}
+
+.cuadro_carrusel_2 {
+	height: 14em;
+	border-top: 1px solid #e7e7e8;
+	border-right: 1px solid #e7e7e8;
+	border-left: 1px solid #e7e7e8;
+	background-image: url(imagenes/V4-Carrusel2_fondo.jpg);
+}
+
+.elemento_carrusel_2 {
+	float: left;
+	width: 9.35em;
+	border-right: 1px solid #e7e7e8;
+	padding-top: .5em;
+	height: 13.5em;
+	padding-left: .4em;
+	overflow: hidden;
+}
+
+.imagen_carrusel_2 {
+	height: 13em;
+	width: 9em;
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+
+.B1 {
+	margin-top: -3em;
+}
+
+.Fon_c4v {
+	background-color: black;
+	opacity: 0.75;
+	width: 9em;
+	height: 13em;
+	position: relative;
+	filter:alpha(opacity=70);
+}
+
+.T1 {
+	color: white;
+	position: relative;
+	margin-top: -13em;
+	width: 9em;
+	height: 13em;
+}
+
+.Tit_c2_v4 {
+	font-size: .7em;
+	line-height: 1.1em;
+	padding: .2em .5em;
+	height: 3.6em;
+	text-align: left;
+}
+
+.Tex_c2_v4 {
+	font-size: .7em;
+	line-height: 1.1em;
+	margin-top: .5em;
+	padding-right: .5em;
+	padding-left: .5em;
+	text-align: left;
+}
+
+.Tex_c2_v4 a {
+	color: white;
+	text-decoration: none;
+}
+
+/* --------------------- */
+
+.L_verde {
+	border-top: 3px solid #9dd06b;
+}
+
+.L_naranja {
+	border-top: 3px solid #f3901b;
+}
+
+.L_azul {
+	border-top: 3px solid #0367b3;
+}
+
+.L_limon {
+	border-top: 3px solid #ccd522;
+}
+
+.L_rosa {
+	border-top: 3px solid #d90a90;
+}
+
+.L_marron {
+	border-top: 3px solid #920e26;
+}
+
+/* ------------------- */
+
+.F_verde {
+	width: 10px;
+	height: 5px;
+	background-image: url(imagenes/flechas_carrusel2.gif);
+	float: right;
+	margin-right: 3px;
+}
+
+.F_naranja {
+	width: 10px;
+	height: 5px;
+	float: right;
+	margin-right: 3px;
+	background: url(imagenes/flechas_carrusel2.gif) -15px;
+}
+
+.F_azul {
+	width: 10px;
+	height: 5px;
+	float: right;
+	margin-right: 3px;
+	background: url(imagenes/flechas_carrusel2.gif) -30px;
+}
+
+.F_limon {
+	width: 10px;
+	height: 5px;
+	float: right;
+	margin-right: 3px;
+	background: url(imagenes/flechas_carrusel2.gif) -45px;
+}
+
+.F_rosa {
+	width: 10px;
+	height: 5px;
+	float: right;
+	margin-right: 3px;
+	background: url(imagenes/flechas_carrusel2.gif) -60px;
+}
+
+.F_marron {
+	width: 10px;
+	height: 5px;
+	float: right;
+	margin-right: 3px;
+	background: url(imagenes/flechas_carrusel2.gif) -75px;
+}
+
+/* ------------------ */
+
+.imagen_c2 {
+	border: 2px solid gray;
+	width: 9em;
+	height: 13em;
+	margin-right: .4em;
+}
+
+.titulo_c1 {
+	text-transform: uppercase;
+	margin-bottom: .2em;
+	font-size: .8em;
+}
+
+.titulo_c1 a {
+	color: #b6590f;
+	text-decoration: none;
+}
+
+.titulo_c1 a:hover {
+	text-decoration: underline;
+}
+
+.descrip_c1 {
+	font-size: .6em;
+	line-height: 1.2em;
+	color: #5b5a59;
+}
+
+/*Cuadros tipo Carrusel */
+
+.cuadro_carrusel_3 {
+	height: 7em;
+	/*border-top: 1px solid #e7e7e8;
+	border-right: 1px solid #e7e7e8;
+	border-left: 1px solid #e7e7e8;*/
+	background-image: url(imagenes/V4-Carrusel2_fondo.jpg);
+}
+
+.elemento_carrusel_3 {
+	float: left;
+	width: 18.5em;
+	height: 17.5em;
+	overflow: hidden;
+}
+
+.Fon_c3v {
+	background-color: black;
+	opacity: 0.75;
+	width: 18.5em;
+	height: 17.5em;
+	position: relative;
+	filter:alpha(opacity=70);
+}
+.T3 {
+	color: white;
+	position: relative;
+	margin-top: -17.5em;
+	width: 18.5em;
+	height: 5em;
+}
+.Tit_c2_v3 {
+	font-size: .89em;
+	line-height: 1.1em;
+	padding: .2em .5em;
+	height: 3.6em;
+	text-align: left;
+}
+.Tex_c2_v3 {
+	font-size: .8em;
+	line-height: 1.1em;
+	margin-top: .2em;
+	padding-right: .5em;
+	padding-left: .5em;
+	text-align: left;
+}
+.Tex_c2_v3 a {
+	color: white;
+	text-decoration: none;
+}
+
+
