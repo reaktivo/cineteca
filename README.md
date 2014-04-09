@@ -28,12 +28,12 @@ Un módulo Nodejs para extraer horarios de películas en la Cineteca Nacional.
       // embed: 'http://www.youtube.com/embed/ltK0IN2U2hU?autoplay=1&iv_load_policy=3' }, etc ]
     });
 
-    Obtener todas las peliculas de un día especifico
+## Obtener todas las peliculas de un día especifico
     cineteca.get_movies_by_day( function(err, movies) {
         for (i in movies){  console.log(movies[i].title) }
     } , day  ) /* day -> yyyy-mm-dd */
 
-    Obtener todos los días disponibles actualmente
+## Obtener todos los días disponibles actualmente
     cineteca.get_days( function(err, days) {
         for (i in days){
           console.log( days[i] )
