@@ -1,0 +1,152 @@
+/* 
+    Document   : mosaico
+    Created on : 23-may-2013, 16:05:04
+    Author     : elopez
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+#mosaico{
+    position: relative;
+    width: 980px;
+    min-height: 640px;
+    margin: 10px 0 0 0;
+}
+#mosaicoLeft{
+    width: 163px;
+    float: left;
+}
+.mosaicopleca1{
+    top: 20px;
+    cursor: pointer;
+}
+#mosaicoRight{
+    width: 685px;
+    float: left;
+}
+
+#mosaicoRightBottom{
+    width: 100%;
+    min-height: 330px;
+}
+#mosaicoRightTop{
+    width: 100%;
+    min-height: 290px;
+}
+#mosaicoRightTop1{
+    width: 425px;
+    float: left;
+    height: 290px;
+}
+.mosaicopleca2{
+    left: 542px;
+    top: 239px;
+    cursor: pointer;
+}
+#mosaicoRightTop2{
+    width: 259px;
+    float: left;
+    height: 290px;
+}
+.mosaicopleca3{
+    left: 802px;
+    top: 20px;
+    cursor: pointer;
+}
+.mosaicopleca4{
+    bottom: 41px;
+    left: 295px;
+    cursor: pointer;
+}
+.mosaicopleca5{
+    bottom: 294px;
+    cursor: pointer;
+    left: 801px;
+}
+#mosaicoRightBottom1{
+    width:350px; 
+    height:330px;
+    float:left;
+}
+#mosaicoRightBottom2{
+    width:335px; 
+    height:330px;
+    float:left;
+}
+
+
+
+/*Nuevo Mosaico*/
+.mosaicopleca12{
+    cursor: pointer;
+    left: 200px;
+    top: 74px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+     /* Firefox */
+     -moz-transform: rotate(90deg);
+     /* Opera */
+     -o-transform: rotate(90deg);
+     /* IE 9 */
+     -ms-transform: rotate(90deg);
+    z-index: 10;
+}
+.mosaicopleca22{
+    cursor: pointer;
+    left: 360px;
+    top: 74px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+     /* Firefox */
+     -moz-transform: rotate(90deg);
+     /* Opera */
+     -o-transform: rotate(90deg);
+     /* IE 9 */
+     -ms-transform: rotate(90deg);
+    z-index: 10;
+}
+.mosaicopleca32{
+    cursor: pointer;
+    left: 523px;
+    top: 74px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+     /* Firefox */
+     -moz-transform: rotate(90deg);
+     /* Opera */
+     -o-transform: rotate(90deg);
+     /* IE 9 */
+     -ms-transform: rotate(90deg);
+    z-index: 10;
+}
+.mosaicopleca42{
+    cursor: pointer;
+    left: 686px;
+    top: 74px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+     /* Firefox */
+     -moz-transform: rotate(90deg);
+     /* Opera */
+     -o-transform: rotate(90deg);
+     /* IE 9 */
+     -ms-transform: rotate(90deg);
+    z-index: 10;
+}
+.mosaicopleca52{
+   cursor: pointer;
+    left: 850px;
+    top: 74px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+     /* Firefox */
+     -moz-transform: rotate(90deg);
+     /* Opera */
+     -o-transform: rotate(90deg);
+     /* IE 9 */
+     -ms-transform: rotate(90deg);
+    z-index: 10;
+}

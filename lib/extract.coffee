@@ -43,7 +43,13 @@ table =
     id = get_youtube_id(this)
     "http://www.youtube.com/embed/#{id}?autoplay=1&iv_load_policy=3" if id
 
-exports.details = ($, url) ->
+
+exports.details = ($, url, day) ->
+  #data = url.split("#")
+  #url = data[0]
   movie = object map table, (fn, key) ->
     [key, try fn.call $, url]
+  movie.date = day.split("=")[1]
   if movie.id then movie else null
+
+
