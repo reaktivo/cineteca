@@ -6,8 +6,11 @@ Un módulo Nodejs para extraer horarios de películas en la Cineteca Nacional.
 ## Para instalar:
 
     npm install cineteca@latest --save
-    
-    
+
+## Testing
+
+    npm test
+
 ## Para usar
 
     var cineteca = require('cineteca');

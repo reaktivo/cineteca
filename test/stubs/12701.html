@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-mx" lang="es-mx">
+    <head>   
+        <title>Cineteca Nacional MEXICO</title>
+        <link rel="icon" type="image/ico" href="http://www.cinetecanacional.net/favicon.ico" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
+        <link rel='stylesheet' type='text/css' href='../css/general.css'/>
+        <link rel='stylesheet' type='text/css' href='../css/mosaico.css'/>
+        <link rel='stylesheet' type='text/css' href='../css/cartelera.css'/>
+        <link rel='stylesheet' type='text/css' href='../css/style.css'/>
+        <!-- utilizadas para la versiÃ³n del buscador 2012-2013 
+        <link rel="stylesheet" href="http://www.encuentra.gob.mx/css/apf.css" type="text/css">
+        <script src="http://www.encuentra.gob.mx/api/gobmxWidgetAPI-min.js" type="text/javascript"></script>
+        <script src="http://www.encuentra.gob.mx/properties/gobmxWidgetAPI-conf.js" type="text/javascript"></script>
+        -->
+        
+        <script type="text/javascript" src="../sliderengine/jquery.js"></script>
+        <script type="text/javascript" src="../sliderengine/amazingslider.js"></script>
+        <script type="text/javascript" src="../sliderengine/initslider-1.js"></script>
+        <script type="text/javascript" src="../js/funcionesHome.js"></script>
+        <script type="text/javascript" src="../js/jquery.tinyscrollbar.min.js"></script>
+        <script type="text/javascript" src="../js/tinybox.js"></script>
+        <link rel="stylesheet" type="text/css" media="all" href="../css/calendar-green.css" title="blue"/>
+        <script type="text/javascript" src="../js/calendar.js"></script>
+        <!--<script type="text/javascript" src="http://www.cinetecanacional.net/js/jquery/js/jquery-1.3.2.min.js"></script>-->
+        <script type="text/javascript" src="http://www.cinetecanacional.net/js/jquery/js/jquery-ui-1.7.2.custom.min.js"></script>
+        <script type="text/javascript" src="http://www.cinetecanacional.net/js/jscalendar/lang/calendar-es.js"></script>
+        <script type="text/javascript" src="http://www.cinetecanacional.net/js/jscalendar/calendar-setup.js"></script>
+        <link rel='stylesheet' href='http://www.cinetecanacional.net/css/carrusel/carrusel_2.css' type='text/css'/>
+        <script type='text/javascript' src='http://www.cinetecanacional.net/js/jquery/js/1.8/jquery-ui-1.8.2.custom.min.js'></script>
+        <link rel='stylesheet' href='http://www.cinetecanacional.net/css/scroll/scroll2.css' type='text/css'  media="screen"/>
+<!-- MANEJO DE GOOGLE ANALYTICS -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-10776450-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+</script>
+
+    </head>
+      
+<body>
+<div id="principalContainer">
+    <div id="encabezado">
+        <div id="menu-Head" class="alignRightMenu">
+            <a href="http://www.cinetecanacional.net/" class="linkmenu">Inicio</a>&nbsp;|&nbsp;
+            <a href="#" class="linkmenu" onClick="location.href='../controlador.php?opcion=directorio'">Directorio</a>&nbsp;|&nbsp;
+            <a href="#" class="linkmenu" onClick="location.href='../controlador.php?opcion=mapaSitio'">Mapa del Sitio</a>&nbsp;|&nbsp;
+            <a href="#" class="linkmenu" onClick="location.href='../controlador.php?opcion=rss'">RSS</a>&nbsp;|&nbsp; 
+            <a href="#" class="linkmenu" onClick="location.href='http://www.cinetecanacional.net/movil'">Versi&oacute;n Movil</a>
+        </div>
+        <div id="logos">
+            <div id="conacultaCineteca" class="inline">
+                <img src="http://www.cinetecanacional.net/imagenes/encabezado/logotipo.png" width="228" height="72" alt="Cineteca Nacional" onClick="location.href='http://www.cinetecanacional.net/'"/>
+            </div>
+            <div id="logo40" class="inline"> <!-- width="228" height="72"  -->
+                    <img src="http://www.cinetecanacional.net/imagenes/encabezado/40anios.png" alt="Cineteca Nacional 40 A&ntilde;os" onClick="location.href='http://www.cinetecanacional.net/'"/>
+                </div>
+            <div id="socialSerch">                                                                                        
+                <div id="social" class="inline">
+                    <img src="http://www.cinetecanacional.net/imagenes/encabezado/logofacebook.png" class='linkImage' alt="S&iacute;guenos en Facebook" onClick="window.open('http://www.facebook.com/CinetecaMexico','_blank');" width="37" height="37"/>
+                    <img src="http://www.cinetecanacional.net/imagenes/encabezado/logotwitter.png" class='linkImage' alt="S&iacute;guenos en Twitter" onClick="window.open('http://twitter.com/CinetecaMexico','_blank');" width="37" height="37"/>
+                    <img src="http://www.cinetecanacional.net/imagenes/encabezado/logoyoutube.png" class='linkImage' alt="S&iacute;guenos en YouTube" onClick="window.open('http://www.youtube.com/user/cinetecanacional2','_blank');" width="37" height="37"/>
+                    <img src="http://www.cinetecanacional.net/imagenes/encabezado/logotumblr.png" class='linkImage' alt="S&iacute;guenos en Tumblr" onClick="window.open('http://cinetecanacional.tumblr.com/','_blank');" width="37" height="37"/>
+                    <img src="http://www.cinetecanacional.net/imagenes/encabezado/logoinstagram.png" class='linkImage' alt="S&iacute;guenos en Instagram" onClick="window.open('http://instagram.com/cinetecanacionalmx','_blank');" width="37" height="37"/>
+                </div>
+                    <div style="float: right;background-color: #f1f1f1; margin-top:20px; padding-top: 2px; box-shadow: inset 0px 2px 3px rgba(255,255,255,0.8), 1px 1px 3px rgba(245,245,245,0.2); width:265px; ">
+                        <script>
+                          (function() {
+                            var cx = '004631619122437465183:vdzftejr41s';
+                            var gcse = document.createElement('script');
+                            gcse.type = 'text/javascript';
+                            gcse.async = true;
+                            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                                '//www.google.com/cse/cse.js?cx=' + cx;
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(gcse, s);
+                          })();
+                        </script>
+                        <gcse:search></gcse:search>                    
+                    </div>
+                
+                
+                <!--  ANTIGUO BUSCADOR 2012-2013 
+                <div id="gobmx-searchbox-container-ficine">
+                    <script type="text/javascript">_gmx.loadGobMXsearchAPI({container:'gobmx-searchbox-container-ficine',client:'ficine',newWindow:true});</script>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+    <div id="menu">
+        <div id="menuQuienes" class="inline opcionMenu color1" ><span class="etiquetaMenu">Qui&eacute;nes somos</span>
+            <div id="submenuQuienes" class="color1 subMenu">
+                <ul class="subMenulista">
+                    <li><a onClick="location.href='../controlador.php?opcion=contexto'">Informaci&oacute;n</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=ubicPrecios'">Ubicaci&oacute;n y costos</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=contacto'">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="menuCartelera" class="inline opcionMenu color2"><div onClick="location.href='#'"><span class="etiquetaMenu">Programaci&oacute;n</span></div>
+            <div id="submenuCartelera" class="color2 subMenu">
+                <ul class="subMenulista">
+                    <li><a onClick="location.href='../controlador.php?opcion=mosaicoCineteca'">Cartelera</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=muestra'">Muestra</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=foro'">Foro</a></li>
+<!--                    <li><a onclick="location.href='../controlador.php?opcion=sedes'">Sedes Alternas</a></li>
+                    <li><a onclick="location.href='../controlador.php?opcion=cinetecaVa'">Cineteca va</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <div id="menuAcervos" class="inline opcionMenu color3" ><div><span class="etiquetaMenu">Preservaci&oacute;n</span></div>
+            <div id="submenuAcervos" class="color3 subMenu">
+                <ul class="subMenulista">
+                    <li><a onClick="location.href='../controlador.php?opcion=acervo'">Informaci&oacute;n</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=laboratoriodigital'">Lab. Restauraci&oacute;n Digital</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=archivomemoria'">Archivo Memoria</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="menuDocumentacion" class="inline opcionMenu color4"><span class="etiquetaMenu">Centro Documentaci&oacute;n</span>
+            <div id="submenuDocumentacion" class="color4 subMenu2">
+                <ul class="subMenulista">
+                    <li><a onClick="location.href='../controlador.php?opcion=CDOC'">Informaci&oacute;n</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=expBibliografico'">Acervo bibliogr&aacute;fico</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=expHemerografico'">Acervo hemerogr&aacute;fico</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=CDI'">Novedades</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="menuPublicaciones" class="inline opcionMenu color5" ><span class="etiquetaMenu">Publicaciones</span>
+            <div id="submenuPublicaciones" class="color5 subMenu">
+                <ul class="subMenulista">
+                    <li><a onClick="location.href='../controlador.php?opcion=libros'">Libros</a></li>
+                    <li><a onClick="window.open('http://iconica.cinetecanacional.net', '_blank');">Revista Ic&oacute;nica</a></li>
+                    <li><a onClick="window.open('http://www.issuu.com/cinetecanacional', '_blank');">Programa Mensual</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="menuExhibicion" class="inline opcionMenu color6" ><span class="etiquetaMenu">Hist&oacute;rico de exhibici&oacute;n</span>
+            <div id="submenuExhibicion" class="color6 subMenu2">
+                <ul class="subMenulista">
+                    <li><a onClick="location.href='../controlador.php?opcion=historicoPeliculas'">Buscador de pel&iacute;culas exhibidas</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div id="menuTransparencia" class="inline opcionMenu color7" ><div onClick="location.href='controlador.php?opcion=5'"><span class="etiquetaMenu">Transparencia</span></div>
+            <div id="submenuTransparencia" class="color7 subMenu">
+                <ul class="subMenulista">
+                    <li><a onClick="location.href='../controlador.php?opcion=1'">Normatividad en materia de Transparencia</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=2'">Comit&eacute; de informaci&oacuten</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=3'">Transparencia focalizada</a></li>
+                    <li><a onClick="location.href='http://www.transparenciapresupuestaria.gob.mx/Portal/transform.nodo?id=3.1&transformacion=s&excel=n&ka_imagen=23&zip=n&paramts=0=L23'">Indicadores de programas presupuestarios</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=4'">Recomendaciones dirigidas a la Cineteca Nacional</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=6'">Estudios y opiniones</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=7'">Programas del Plan Nacional de Desarrollo</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=8'">Rendici&oacute;n de cuentas</a></li>
+                    <li><a onClick="location.href='../controlador.php?opcion=9'">Participaci&oacute;n ciudadana</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript"> $(document).ready(function(){ }); </script>
+<div id='muestraContenido'>
+<div id="contenedorPeliculaDetalle" class="detalle">
+    <div id="peliculaVisible" class="width100">
+        <div id="peliculaIzq" style="width: 50%;float: left;">
+            <div id="plecaTituloSeccion" class="titulo color1" style="width: 465px;">56 Muestra Internacional de Cine</div>
+            
+            <div class="peliculaTitulo" style="margin-left: 10px;">El gran hotel Budapest                <p class="peliculaTitDir">(The Grand Budapest Hotel, Gran-Alemania, 2014, 100 mins.)</p>
+            </div>
+            <div id="peliculaFicha" style="margin:10px;text-align: left;">
+<span class="bold">Director:</span>&nbsp;Wes Anderson.&nbsp;<span class="bold">Gui&oacute;n:</span>&nbsp;Wes Anderson, basado en una idea de Hugo Guinness.&nbsp;<span class="bold">F en C.:</span>&nbsp;Robert Yeoman.&nbsp;<span class="bold">M&uacute;sica:</span>&nbsp;Alexandre Desplat. Edición: Barney Pilling.&nbsp;<span class="bold">Con:</span>&nbsp;Ralph Fiennes (Monsieur Gustave), Tony Revolori (Zero Moustafa), F. Murray Abraham (Mr. Moustafa), Mathieu Amalric (Serge), Adrian Brody (Dimitri), Willem Dafoe (Jopling), Jeff Goldblum (Kovacs), Jude Law (Junger Schriftsteller)..&nbsp;<span class="bold">Productor:</span>&nbsp;Wes Anderson, Jeremy Dawson, Steven M. Rales y Scott Rudin..&nbsp;<span class="bold">Distribuidora:</span>&nbsp;20th Century Fox.&nbsp;<span class="bold">Clasificaci&oacute;n:</span>&nbsp;B-15.            </div>
+            <div id="peliculaSinopsis" class="peliculaImagenSinopsis peliculaSinopsis2">
+                <p> <p><!--[if gte mso 9]><xml> <o:OfficeDocumentSettings> <o:AllowPNG /> </o:OfficeDocumentSettings> </xml><![endif]--></p>
+<p><!--[if gte mso 9]><xml> <w:WordDocument> <w:View>Normal</w:View> <w:Zoom>0</w:Zoom> <w:TrackMoves /> <w:TrackFormatting /> <w:HyphenationZone>21</w:HyphenationZone> <w:PunctuationKerning /> <w:ValidateAgainstSchemas /> <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid> <w:IgnoreMixedContent>false</w:IgnoreMixedContent> <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText> <w:DoNotPromoteQF /> <w:LidThemeOther>ES-MX</w:LidThemeOther> <w:LidThemeAsian>X-NONE</w:LidThemeAsian> <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript> <w:Compatibility> <w:BreakWrappedTables /> <w:SnapToGridInCell /> <w:WrapTextWithPunct /> <w:UseAsianBreakRules /> <w:DontGrowAutofit /> <w:SplitPgBreakAndParaMark /> <w:EnableOpenTypeKerning /> <w:DontFlipMirrorIndents /> <w:OverrideTableStyleHps /> <w:UseFELayout /> </w:Compatibility> <w:DoNotOptimizeForBrowser /> <m:mathPr> <m:mathFont m:val="Cambria Math" /> <m:brkBin m:val="before" /> <m:brkBinSub m:val=" " /> <m:smallFrac m:val="off" /> <m:dispDef /> <m:lMargin m:val="0" /> <m:rMargin m:val="0" /> <m:defJc m:val="centerGroup" /> <m:wrapIndent m:val="1440" /> <m:intLim m:val="subSup" /> <m:naryLim m:val="undOvr" /> </m:mathPr></w:WordDocument> </xml><![endif]--><!--[if gte mso 9]><xml> <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"   DefSemiHidden="true" DefQFormat="false" DefPriority="99"   LatentStyleCount="267"> <w:LsdException Locked="false" Priority="0" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Normal" /> <w:LsdException Locked="false" Priority="9" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="heading 1" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" /> <w:LsdException Locked="false" Priority="39" Name="toc 1" /> <w:LsdException Locked="false" Priority="39" Name="toc 2" /> <w:LsdException Locked="false" Priority="39" Name="toc 3" /> <w:LsdException Locked="false" Priority="39" Name="toc 4" /> <w:LsdException Locked="false" Priority="39" Name="toc 5" /> <w:LsdException Locked="false" Priority="39" Name="toc 6" /> <w:LsdException Locked="false" Priority="39" Name="toc 7" /> <w:LsdException Locked="false" Priority="39" Name="toc 8" /> <w:LsdException Locked="false" Priority="39" Name="toc 9" /> <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" /> <w:LsdException Locked="false" Priority="10" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Title" /> <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" /> <w:LsdException Locked="false" Priority="11" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtitle" /> <w:LsdException Locked="false" Priority="22" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Strong" /> <w:LsdException Locked="false" Priority="20" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Emphasis" /> <w:LsdException Locked="false" Priority="59" SemiHidden="false"    UnhideWhenUsed="false" Name="Table Grid" /> <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" /> <w:LsdException Locked="false" Priority="1" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="No Spacing" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 1" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 1" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 1" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 1" /> <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" /> <w:LsdException Locked="false" Priority="34" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" /> <w:LsdException Locked="false" Priority="29" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Quote" /> <w:LsdException Locked="false" Priority="30" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 1" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 1" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 1" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 1" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 1" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 2" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 2" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 2" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 2" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 2" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 2" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 2" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 2" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 2" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 3" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 3" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 3" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 3" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 3" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 3" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 3" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 3" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 3" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 4" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 4" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 4" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 4" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 4" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 4" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 4" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 4" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 4" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 5" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 5" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 5" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 5" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 5" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 5" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 5" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 5" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 5" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 6" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 6" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 6" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 6" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 6" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 6" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 6" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 6" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 6" /> <w:LsdException Locked="false" Priority="19" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" /> <w:LsdException Locked="false" Priority="21" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" /> <w:LsdException Locked="false" Priority="31" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" /> <w:LsdException Locked="false" Priority="32" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" /> <w:LsdException Locked="false" Priority="33" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Book Title" /> <w:LsdException Locked="false" Priority="37" Name="Bibliography" /> <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" /> </w:LatentStyles> </xml><![endif]--><!--[if gte mso 10]> <mce:style><!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Tabla normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-priority:99; 	mso-style-parent:""; 	mso-padding-alt:0cm 5.4pt 0cm 5.4pt; 	mso-para-margin:0cm; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Cambria","serif";} --> <!--[endif] --></p>
+<p style="text-align: justify; text-justify: inter-ideograph; line-height: 150%;">Monsieur Gustave es el gerente del elegante Gran hotel Budapest. Conoce a la perfecci&oacute;n los deseos de sus exc&eacute;ntricos hu&eacute;spedes, particularmente de algunas damas de alcurnia. Acusado por su propio hijo de asesinato y de ser un cazafortunas, Gustave tendr&aacute; en la herencia de una de sus amantes la soluci&oacute;n a sus problemas. Inspirado en el estilo narrativo de Stefan Zweig para retratar la Europa de entreguerras, Wes Anderson orquesta una corrosiva comedia sobre las complejidades de la instituci&oacute;n familiar.</p></p>
+                <p> </p>
+            </div>
+            <div id="peliculaImagen" style="text-align: center;">
+                <img src="http://www.cinetecanacional.net/imagenes/img_peliculas/12701-B.jpg" width="450" height="233" alt="El gran hotel Budapest" title="El gran hotel Budapest"/>            </div>
+            <div class="space"></div>
+            <div style="margin-bottom:3px">
+            <table align="center" border="0">
+            	<tr>
+                	<td>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.cinetecanacional.net/php/detallePelicula.php?clv=12701&Tit=56%20Muestra%20Internacional%20de%20Cine" data-text="Cineteca Nacional M&eacute;xico" 						data-lang="es" align="center" width="100px">Twittear</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					</td>
+                    <td>
+                <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.cinetecanacional.net/php/detallePelicula.php?clv=12701&Tit=56%20Muestra%20Internacional%20de%20Cine$&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true" width="150px"></iframe>
+                	</td>
+					<td>
+                <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+                <div class="g-plusone" data-href="http://www.cinetecanacional.net/php/detallePelicula.php?clv=12701&Tit=56%20Muestra%20Internacional%20de%20Cine" width="80px"></div>
+                   <script type="text/javascript">
+                  window.___gcfg = {lang: 'es-419'};
+
+                  (function() {
+                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                    po.src = 'https://apis.google.com/js/platform.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                  })();
+                </script>
+					</td>
+                    					<td>
+                <a href="" target="_blank"><img src="http://www.cinetecanacional.net/images/redessociales/tumblr_logo.png" alt="Comparte en Tumblr" title="Comparte en Tumblr" width="85px" height="30px" border="0"/></a>
+					</td>
+				</tr>
+            </table>
+            </div>  
+       
+             
+             <div id="botones">
+             <table id="tableBotones" align="center">
+             <tr><td> 
+                                        
+                        <div id="botonTrailer" class="botonTrailer color4" onclick="TINY.box.show({iframe:'http://www.youtube.com/embed/fsE_rJEZTaI',boxid:'frameless',width:750,height:450,fixed:false,maskid:'bluemask',maskopacity:40,closejs:function(){ }})">Trailer</div>
+                                    
+                                        
+<!--
+                    <div id="peliculaRedes" class="social">
+                        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.cinetecanacional.net%2Fphp%2FdetallePelicula.php%3Fclv%3D12701%26Tit%3D56+Muestra+Internacional+de+Cine&t=Cineteca+Nacional+M%C3%A9xico" target="_blank"><img src="http://www.cinetecanacional.net/images/redessociales/logofacebook_share.png" alt="Comparte en Facebook" title="Comparte en Facebook" style="margin-right: 20px; margin-top: 8px;"/></a>
+                        <a href="http://twitter.com/home?status=Cineteca+Nacional+M%C3%A9xico - http%3A%2F%2Fwww.cinetecanacional.net%2Fphp%2FdetallePelicula.php%3Fclv%3D12701%26Tit%3D56+Muestra+Internacional+de+Cine" target="_blank"><img src="http://www.cinetecanacional.net/images/redessociales/logotwitter_share.png" alt="Comparte en Twitter" title="Comparte en Twitter" style="margin-right: 20px; margin-top: 8px;"/></a>
+                        <a href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fwww.cinetecanacional.net%2Fphp%2FdetallePelicula.php%3Fclv%3D12701%26Tit%3D56+Muestra+Internacional+de+Cine&name=Cineteca+Nacional+M%C3%A9xico" target="_blank"><img src="http://www.cinetecanacional.net/images/redessociales/logotumblr_share.png" alt="Comparte en Tumblr" title="Comparte en Tumblr" /></a>
+                    </div>
+-->
+                    <div id="botonVer2" class="botonVerDetalle" onclick="location.href=''">Regresar</div>
+                    </td></tr>
+                    </table>
+                </div>
+        </div>
+        <div id="peliculaDer" style="width: 43%;float: right;">
+             <div id="plecaTituloSeccion" class="titulo color6">Horarios</div>
+             <div id="horarios"> <p><span class='bold'>Martes&nbsp;15&nbsp;de&nbsp;abril de 2014</span><br>Sala 1 : Jorge Stahl, Cineteca Nacional</a>: <span>16:00 21:00 hrs.</span><br></p><p><span class='bold'>Mi&eacute;rcoles&nbsp;16&nbsp;de&nbsp;abril de 2014</span><br>Sala 1 : Jorge Stahl, Cineteca Nacional</a>: <span>12:00 18:30 hrs.</span><br></p></p> </div>          
+        </div>
+    </div>
+</div>
+<div style="clear:both"></div>
+ <div id="pie">
+    <div id="pie_b">&nbsp;</div>
+    <p>
+          Av. M&eacute;xico Coyoac&aacute;n #389 Col. Xoco Del. Benito Ju&aacute;rez Mexico D.F. C.P 03330 - Tel conmutador: +52 (55)4155 1200. Cartelera telef&oacute;nica: 4155 1190 
+          <a target="_parent" href="correo" >Comentarios sobre este Sitio de Internet</a>
+          <a target="_parent" href="correo">
+            <img width="14" height="10" border="0" alt="Comentarios y Sugerencias sobre &eacute;ste sitio de Internet" src="http://www.cinetecanacional.net/imagenes/pie/contacto_webmaster.png" />
+          </a>
+    </p>
+    <p>FIDEICOMISO PARA LA CINETECA NACIONAL - ALGUNOS DERECHOS RESERVADOS &copy; 2013 - <a href="http://www.cinetecanacional.net/controlador.php?opcion=politicas">POL&Iacute;TICAS DE PRIVACIDAD</a> </p>
+    <div id="pie_d">&nbsp;</div>
+ </div>
+    
+    </div>
+</div>
+</body>
+</html>
