@@ -5,13 +5,13 @@ async = require 'async'
 { map, compact } = require 'underscore'
 details = require './details'
 
+class Cineteca
 
-module.exports = ({entry, today} = {}) ->
+  constructor: ({entry, today} = {}) ->
+    @entry_url = entry or 'http://www.cinetecanacional.net'
+    @today_path = today or '/controlador.php?opcion=carteleraDia'
 
-  @entry_url = entry or 'http://www.cinetecanacional.net'
-  @today_path = today or '/controlador.php?opcion=carteleraDia'
-
-  @get = (url, cb) ->
+  get: (url, cb) ->
     request { url, encoding: 'binary' }, (err, res, body) ->
       if res and res.statusCode
         unless 200 <= res.statusCode < 300 or res.statusCode is 304
@@ -27,7 +27,7 @@ module.exports = ({entry, today} = {}) ->
   # @param <String> url: Starting point to load
   # @param <Function> callback: Function to call
   #        when finished
-  @movie_urls = (url, cb) =>
+  movie_urls: (url, cb) =>
     urls = []
     @get url, (err, body) ->
       return cb err if err
@@ -43,7 +43,7 @@ module.exports = ({entry, today} = {}) ->
   # @param <String> url: The movie url to load
   # @param <Function> callback: Function to call
   #        when finished
-  @movie_details = (url, cb) =>
+  movie_details: (url, cb) =>
     url = @entry_url + url
     @get url, (err, body) ->
       return cb err if err
@@ -56,11 +56,12 @@ module.exports = ({entry, today} = {}) ->
   # movie listings for the day when complete.
   #
   # @param callback
-  @today = (cb) =>
+  today: (cb) =>
     waterfall [
       (cb) => @movie_urls @entry_url + @today_path, cb
       (urls, cb) => async.map urls, @movie_details, cb
       (movies, cb) => cb null, compact movies
     ], cb
 
-  this
+
+module.exports = (opts) -> new Cineteca(opts)
