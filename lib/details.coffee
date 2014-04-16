@@ -43,7 +43,7 @@ table =
     id = get_youtube_id(this)
     "http://www.youtube.com/embed/#{id}?autoplay=1&iv_load_policy=3" if id
 
-exports.details = ($, url) ->
+module.exports = ($, url) ->
   movie = object map table, (fn, key) ->
     [key, try fn.call $, url]
   if movie.id then movie else null
