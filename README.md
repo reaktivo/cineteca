@@ -13,10 +13,14 @@ Un módulo Nodejs para extraer horarios de películas en la Cineteca Nacional.
 
 ## Para usar
 
-    var cineteca = require('cineteca');
-    
+    var cineteca = require('cineteca')({
+      // defaults:
+      entry: 'http://www.cinetecanacional.net',
+      today: '/controlador.php?opcion=carteleraDia'
+    });
+
     cineteca.today(function(err, movies) {
-      // movies es un array de 
+      // movies es un array de
       // [{ id: '12578',
       // url:
       //  { href: 'http://www.cinetecanacional.net/php/detallePelicula.php?clv=12578&Tit=Estrenos' },
