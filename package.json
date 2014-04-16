@@ -11,6 +11,10 @@
   ],
   "author": "Marcel Miranda",
   "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/reaktivo/cineteca.git"
+  },
   "dependencies": {
     "async": "~0.7.0",
     "request": "~2.34.0",
