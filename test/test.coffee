@@ -9,7 +9,7 @@ cineteca = do require join "..", "index"
 # Monkey patch instance to use local stubs
 cineteca.get = (url, cb) ->
   stub = join __dirname, "stubs", sanitize url
-  fs.readFile stub, (err, body) ->
+  fs.readFile stub, {encoding: 'utf8'}, (err, body) ->
     cb(err, body)
 
 valid_movie = (details) ->
