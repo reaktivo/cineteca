@@ -1,6 +1,12 @@
 cineteca
 ========
 
+[![Package Info](http://img.shields.io/badge/npm-cineteca-blue.svg)](https://npmjs.org/package/cineteca)
+[![NPM Version](http://img.shields.io/npm/v/cineteca.svg)](https://npmjs.org/package/cineteca)
+[![Build Status](http://img.shields.io/travis/reaktivo/cineteca/master.svg)](http://travis-ci.org/reaktivo/cineteca)
+[![Dependencies Status](https://david-dm.org/reaktivo/cineteca.svg?theme=shields.io)](https://david-dm.org/reaktivo/cineteca)
+[![DevDependencies Status](https://david-dm.org/kamicane/prime/dev-status.svg?theme=shields.io)](https://david-dm.org/reaktivo/cineteca#info=devDependencies)
+
 Un módulo Nodejs para extraer horarios de películas en la Cineteca Nacional.
 
 ## Para instalar:
