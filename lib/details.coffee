@@ -18,7 +18,7 @@ table =
 
   title: ->
     @('.peliculaTitDir').remove()
-    clean @('.peliculaTitulo').text()
+    clean @('.peliculaTitulo').first().text()
 
   time: ->
     clean @('#horarios p:first-of-type span:last-of-type').text()
