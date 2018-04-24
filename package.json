@@ -16,14 +16,14 @@
     "url": "git://github.com/reaktivo/cineteca.git"
   },
   "dependencies": {
-    "async": "~0.7.0",
-    "request": "~2.34.0",
-    "cheerio": "~0.15.0",
-    "coffee-script": "~1.7.1",
-    "underscore": "~1.6.0",
-    "underscore.string": "~2.3.3"
+    "async": "~2.6.0",
+    "request": "~2.85.0",
+    "cheerio": "~0.22.0",
+    "coffee-script": "~1.12.7",
+    "underscore": "~1.9.0",
+    "underscore.string": "~3.3.4"
   },
   "devDependencies": {
-    "mocha": "~1.18.2"
+    "mocha": "~5.1.1"
   }
 }
