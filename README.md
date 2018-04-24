@@ -1,6 +1,8 @@
 cineteca
 ========
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/reaktivo/cineteca.svg)](https://greenkeeper.io/)
+
 [![Package Info](http://img.shields.io/badge/npm-cineteca-blue.svg)](https://npmjs.org/package/cineteca)
 [![NPM Version](http://img.shields.io/npm/v/cineteca.svg)](https://npmjs.org/package/cineteca)
 [![Build Status](http://img.shields.io/travis/reaktivo/cineteca/master.svg)](http://travis-ci.org/reaktivo/cineteca)
